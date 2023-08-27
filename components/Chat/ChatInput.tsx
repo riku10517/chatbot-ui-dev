@@ -162,7 +162,7 @@ export const ChatInput = ({
       } else {
         setActivePromptIndex(0);
       }
-    } else if (e.key === 'Enter' && !isTyping && !isMobile() && !e.shiftKey) {
+    } else if (e.key === 'Enter' && !isTyping && !isMobile() && e.ctrlKey) {
       e.preventDefault();
       handleSend();
     } else if (e.key === '/' && e.metaKey) {
