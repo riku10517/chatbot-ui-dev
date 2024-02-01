@@ -30,19 +30,14 @@ function App({ Component, pageProps }: AppProps<{}>) {
       setCookie('ai_user', cookieId, { maxAge : cookieExpiration }); //setCookie('name','value',{option})
       console.log('Cookie発行') ;
       console.log('初回',cookieId);
-    }
-  }, [cookies]); //依存配列=[cookies]：Cookie削除によるCookie再発行
-
-    // 2回目以降ログイン（Cookie有効期限の更新）
-  useEffect(() => {
-    if (cookies['ai_user']) {
+    } else {
       const cookieId = cookies['ai_user'];
       const cookieExpirationUpdate = 31536000;  //Cookie更新年数：1年
       setCookie('ai_user', cookieId, { maxAge : cookieExpirationUpdate }); //Cookie有効期限を再セット
       console.log('Cookie更新'); 
       console.log('更新',cookieId);
     }
-  }, []); //依存配列=[]：初回レンダリングでのみ実行
+  }); 
   //---------------------------------------------------------------------------------------------------------------
 
   return (
