@@ -405,7 +405,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="16px" className="mx-auto" />
                       </div>
                     ) : (
-                      //↓アプリ名
+                      //↓アプリ名称
                       '送配電Chatbot-test'
                       // 'Chatbot UI'
                     )}
