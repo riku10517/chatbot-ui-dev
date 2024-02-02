@@ -22,7 +22,7 @@ function App({ Component, pageProps }: AppProps<{}>) {
   // ↓ 追加コード------------------------------------------------------------------------------------------------
   const [cookies, setCookie] = useCookies(['ai_user']); //const[現在値,更新用関数] = useCookies(['name'])
 
-   // 初回ログイン（Cookie取得）
+   // Cookie 発行/更新
   useEffect(() => {
     if (!cookies['ai_user']) {
       const cookieId = uuidv4();
