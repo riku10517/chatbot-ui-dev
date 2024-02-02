@@ -43,13 +43,15 @@ export const ChatbarSettings = () => {
         <ClearConversations onClearConversations={handleClearConversations} />
       ) : null}
 
-      <Import onImport={handleImportConversations} />
-
+       {/* ↓ nwrikuden-Chatbot 会話履歴インポート機能不要のためコメントアウト
+      <Import onImport={handleImportConversations} />  */}
+      
+      {/* ↓ nwrikuden-Chatbot 会話履歴エクスポート機能不要のためコメントアウト
       <SidebarButton
         text={t('Export data')}
         icon={<IconFileExport size={18} />}
         onClick={() => handleExportData()}
-      />
+      /> */}
 
       <SidebarButton
         text={t('Settings')}
