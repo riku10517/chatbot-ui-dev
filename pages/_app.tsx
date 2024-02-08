@@ -37,7 +37,7 @@ function App({ Component, pageProps }: AppProps<{}>) {
       console.log('Cookie更新'); 
       console.log('更新',cookieId);
     }
-  }); 
+  },[]); 
   //---------------------------------------------------------------------------------------------------------------
 
   return (
