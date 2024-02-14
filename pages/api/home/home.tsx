@@ -361,7 +361,7 @@ const Home = ({
     >
       <Head>
         {/* <title>Chatbot UI</title> */}
-        <title>送配電Chatbot-test</title>
+        <title>AI コンシェルジュ β版</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"
