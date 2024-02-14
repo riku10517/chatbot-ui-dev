@@ -392,6 +392,25 @@ export const ChatInput = ({
           "Chatbot UI is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.",
         )}
       </div> */}
+      
+      {/* ↓意見募集アプリのリンクを追記 */}
+      <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+        {t(
+          "AIコンシェルジュに関するご意見・ご要望・お困りごと等は、",
+        )}
+        <a
+          href="https://nwrikuden.cybozu.com/k/4364/"
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
+          意見募集アプリ
+        </a>
+        {t(
+          " より承ります。",
+        )}
+      </div> 
+
     </div>
   );
 };
