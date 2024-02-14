@@ -406,7 +406,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                       </div>
                     ) : (
                       //↓アプリ名称
-                      '送配電Chatbot-test'
+                      'AI コンシェルジュ β版'
                       // 'Chatbot UI'
                     )}
                   </div>
